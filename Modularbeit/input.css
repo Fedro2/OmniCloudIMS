@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Sono&display=swap');
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  color: #fff;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #b4c7e7;
+    text-align: center;
+    font-family: 'Sono', monospace;
+}
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+
+/* input.css */
+
+/* Navbar styles */
+
+
+/* Container styles */
+.container {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Logo styles */
+.logo {
+    color: #fff; /* Change the color to your desired text color */
+    text-decoration: none;
+    font-size: 1.5rem; /* Adjust the font size as needed */
+}
+
+/* Navigation links styles */
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #3498db;
+}
+
+.logo {
+    color: #fff; /* Change the color to your desired text color */
+    text-decoration: none;
+    font-size: 1.5rem; /* Adjust the font size as needed */
+}
+
+
+.nav-sublink {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    margin-left: 1px; /* Adjust the margin as needed for space between logo and links */
+}
+
+.nav-link {
+    color: #fff; /* Change the color to your desired text color */
+    text-decoration: none;
+    font-size: 1rem; /* Adjust the font size as needed */
+    font-family: 'Coiny', monospace;
+}
+
+
+.main {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-image: url('assets/hintergrundtest.jpg');
+    background-color: hsla(0, 0%, 0%, .5);
+    margin: 0;
+    max-width: 100%;
+}
+
+.intro {
+    margin-bottom: 15rem;
+    max-width: 90%;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 2rem auto; /* Center horizontally with 2rem top and bottom margins */
+    max-width: 1000px;
+}
+
+h1 {
+    font-size: 6rem;
+  
+   
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.price-main {
+    height: 50vh;
+}
+
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* or justify-content: space-between; */
+}
+
+.options > div {
+    text-align: center;
+    padding: 2.5rem;
+    border: 1px solid #ccc;
+    margin: .75rem;
+    background-color: #cccccc;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    flex: 1 0 200px; /* Adjust the minimum and maximum width based on your needs */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.options h2, .price h2 {
+    color: #007BFF;
+}
+
+.options p, .price p {
+    margin: .5rem 0;
+}
+
+.options input, .price input, .antwort {
+    background-color: #5f9cc0;
+    color: white;
+    padding: .75rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+
+}
+
+.price input {
+    margin-top: 1.5rem;
+}
+
+.size {
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+h3 {
+  padding: 10px;
+    font-size: 1.75rem;
+    font-family: 'Coiny', monospace;
+}
+
+h6 {
+    font-size: 1.25rem;
+    
+    
+  
+    
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+.price  {
+    text-align: center;
+    padding: 2.5rem;
+    border: 1px solid #ccc;
+    margin: .75rem;
+    background-color: #cccccc;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    flex: 1 0 200px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+select, option {
+    width: 100%;
+    text-align: center;
+    outline: none;
+    border: none;
+    height: 2rem;
+    border-radius: 5px;
+}
+
+
+.omnilogo {
+    width: 6.5rem;
+    height: 3rem;
+}
+
+.arrow {
+    position: absolute;
+    top: 6rem;
+    left: 2rem;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
